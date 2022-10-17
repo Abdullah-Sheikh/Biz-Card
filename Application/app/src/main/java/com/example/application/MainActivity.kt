@@ -69,11 +69,36 @@ fun BizCard()
                 ) {
                 CreateProfileImage()
                 Divider()
+
+                CreateInfo()
             }
 
 
 
         }
+    }
+}
+
+@Composable
+private fun CreateInfo() {
+    Column(modifier = Modifier.padding(5.dp)) {
+
+        Text(
+            text = "Abdullah S.",
+            style = MaterialTheme.typography.h4,
+            color = MaterialTheme.colors.primaryVariant
+        )
+        Text(
+            text = "Android programmer",
+            modifier = Modifier.padding(3.dp)
+
+        )
+        Text(
+            text = "@abdullah-Sheikh",
+            modifier = Modifier.padding(3.dp)
+
+        )
+
     }
 }
 
